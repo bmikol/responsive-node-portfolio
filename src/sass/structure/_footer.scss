@@ -1,0 +1,56 @@
+// Footer
+
+.page-footer {
+  background: $light-gray;
+  padding: em(100) 1.5em;
+}
+
+.footer-module {
+  font-size: em(14);
+  margin-bottom: 2em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer-module__icon,
+.footer-module__content {
+  display: inline-block;
+  vertical-align: middle;
+
+  @include tablet-port {
+    vertical-align: top;
+  }
+}
+
+.footer-module__icon {
+  background: $color-base-light;
+  border-radius: 100%;
+  color: $white;
+  font-size: em(45);
+  height: rem(87);
+  position: relative;
+  width: rem(87);
+
+  .fa {
+    @include vertical-center;
+  }
+}
+
+.footer-module__title {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.footer-module__content {
+  color: $dark-gray;
+  margin-left: 2em;
+
+  a {
+    color: inherit;
+    @include hover-underline;
+  }
+}

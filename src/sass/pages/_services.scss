@@ -1,0 +1,46 @@
+// Services
+
+.services__item {
+  font-size: em(14);
+  margin-bottom: 2em;
+  text-align: center;
+
+  @include tablet-port {
+    font-size: em(16);
+    margin-bottom: 3em;
+  }
+
+  @include wide {
+    font-size: em(18);
+    margin-bottom: 4em;
+  }
+}
+
+.services__item-icon {
+  background: linear-gradient(45deg, $color-gradient1, $color-gradient2);
+  border-radius: 100%;
+  color: $white;
+  display: inline-block;
+  font-size: em(45);
+  height: rem(115);
+  margin-bottom: 1.3rem;
+  position: relative;
+  width: rem(115);
+
+  .fa {
+    @include vertical-center;
+  }
+}
+
+.services__item-title {
+  color: $dark-gray;
+  font-size: em(25);
+  font-weight: bold;
+  margin-bottom: 1.3rem;
+  text-transform: uppercase;
+}
+
+.services__item-description {
+  color: $dark-gray;
+  line-height: 1.9;
+}

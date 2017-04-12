@@ -1,0 +1,25 @@
+{
+  "name": "responsive-node-portfolio",
+  "version": "1.0.0",
+  "description": "1-page Node.js portfolio site demo",
+  "main": "index.js",
+  "author": "Brian Mikol",
+  "license": "MIT",
+  "engines": {
+    "node": "7.7.2"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.5.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

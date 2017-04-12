@@ -1,0 +1,75 @@
+// Header
+
+.page-nav {
+  background: $color-base;
+  color: $white;
+  padding: 1em 0 0;
+  text-align: center;
+
+  @include tablet-port {
+    padding: 1.5em;
+  }
+}
+
+.page-nav__li {
+  border-bottom: 1px solid #CCC;
+  position: relative;
+
+  @include tablet-port {
+    border: 0;
+    display: inline-block;
+
+    &::after {
+      content: '-';
+      position: absolute;
+      right: -.15em;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+
+    &:last-child::after {
+      display: none;
+    }
+  }
+}
+
+.page-nav__item {
+  color: inherit;
+  display: block;
+  padding: .5em 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: opacity .2s ease;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  @include tablet-port {
+    font-size: em(18);
+    padding: 1em 2em;
+  }
+}
+
+.page-nav__hamburger {
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 1em;
+  transition: transform .2 ease;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  @include tablet-port {
+    display: none;
+  }
+}
+
+.page-nav__ul {
+  display: none;
+
+  @include tablet-port {
+    display: block !important;
+  }
+}

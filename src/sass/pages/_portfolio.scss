@@ -1,0 +1,53 @@
+// Portfolio
+
+.portfolio__nav {
+  margin-bottom: 2em;
+  text-align: center;
+
+  @include tablet-port {
+    text-align: left;
+  }
+}
+
+.portfolio__nav-li {
+  display: inline-block;
+
+  @include tablet-port {
+    display: block;
+  }
+}
+
+.portfolio__nav-item {
+  color: $dark-gray;
+  display: inline-block;
+  font-size: em(16);
+  font-weight: 600;
+  margin: .3em .8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color .2s ease;
+
+  &:hover,
+  &.is-active {
+    color: $color-highlight;
+  }
+
+  @include tablet-port {
+    display: block;
+    font-size: em(22);
+    margin: 0 0 1.25em;
+  }
+}
+
+.portfolio__item {
+  display: block;
+  margin-bottom: 2em;
+  text-decoration: none;
+
+  @include hover-border;
+
+  img {
+    max-width: none;
+    width: 100%;
+  }
+}
